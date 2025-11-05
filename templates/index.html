@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureGate – AI-Powered Web Security</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <span class="logo">
+          <span class="logo-icon">🚧</span>
+          <span class="logo-text">SecureGate</span>
+        </span>
+        <div class="quote-floating">
+          Infinite Protection, Intelligent Detection
+        </div>
+      </div>
+      <div class="nav-right"></div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Stop Unknown Attacks Before They Strike</h1>
+          <p class="hero-text">
+            Powered by the most advanced AI detection model, SecureGate Firewall
+            integrates seamlessly with modern protocols and rollups to block
+            over 99% of cyberattacks.
+          </p>
+          <div class="hero-buttons">
+            <a href="/home" class="neon-btn">🔍 Check Security</a>
+            <button class="neon-btn" onclick="scrollToHowItWorks()">
+              📖 Learn More
+            </button>
+          </div>
+        </div>
+
+        <div class="shield-animation">
+          <div class="shield-outer"></div>
+          <div class="shield-middle"></div>
+          <div class="shield-inner">
+            <div class="shield-core"></div>
+          </div>
+          <div class="shield-particles"></div>
+        </div>
+      </section>
+
+      <!-- Metrics Section -->
+      <section class="metrics">
+        <div class="metric-card">
+          <span class="metric-value">> 90%</span>
+          <span class="metric-label">Recall</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-value">< 0.001%</span>
+          <span class="metric-label">False Positive Rate</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-value">< 100ms</span>
+          <span class="metric-label">Latency</span>
+        </div>
+      </section>
+
+      <!-- How Secure Works Section -->
+      <section class="how-it-works">
+        <div class="section-container">
+          <h2 class="section-title">How SecureGate Works</h2>
+          <div class="security-features">
+            <div class="feature-box">
+              <div class="feature-icon"></div>
+              <h3>Layer 1: Signature Detection</h3>
+              <p>
+                Incoming requests are first validated against our comprehensive
+                database of known attack signatures for immediate threat
+                detection
+              </p>
+            </div>
+            <div class="feature-box highlight">
+              <div class="feature-icon"></div>
+              <h3>Layer 2: AI Analysis</h3>
+              <p>
+                Requests that pass signature checks undergo advanced feature
+                extraction and ML model analysis to detect unknown attack
+                patterns
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-icon"></div>
+              <h3>Validated Requests</h3>
+              <p>
+                Only requests that successfully clear both security layers are
+                considered valid and allowed to proceed
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-cards">
+          <div class="card">
+            <p>
+              "SecureGate detected threats our old firewall missed. Highly
+              recommend"
+            </p>
+            <span>- Pradyum S, Security Analyst</span>
+          </div>
+          <div class="card">
+            <p>
+              "The AI-powered detection is a game-changer. No breaches since we
+              switched"
+            </p>
+            <span>- Riyaz M, Data Scientist</span>
+          </div>
+          <div class="card">
+            <p>
+              "Simple, effective, and powerful. Secure Gate is our first line of
+              defense."
+            </p>
+            <span>- Amogh G, ML Security Engineer</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        © 2025 SecureGate | AI-Powered Web Security |
+        <a href="" target="_blank" rel="noopener noreferrer" class="neon-link"
+          >23MIS Team - Anshul, Ashfaq, Dhanush, Yash™️</a
+        >
+      </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
