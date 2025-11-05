@@ -7,6 +7,15 @@ waf_logger = logging.getLogger('waf_detections')
 waf_logger.setLevel(logging.INFO)
 
 # Create file handler
+import os
+import logging
+
+# Ensure logs directory exists before creating file handler
+os.makedirs('logs', exist_ok=True)
+
+
+
+
 fh = logging.FileHandler('logs/detections.log')
 fh.setLevel(logging.INFO)
 
